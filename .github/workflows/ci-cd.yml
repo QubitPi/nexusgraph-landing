@@ -36,6 +36,6 @@ jobs:
         with:
           node-version: ${{ env.node_version }}
       - name: Install dependencies
-        run: yarn
+        run: npm install -g yarn@1.22.19 && yarn
       - name: Test production build
         run: yarn build
